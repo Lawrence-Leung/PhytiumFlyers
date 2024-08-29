@@ -69,6 +69,8 @@ Wisdom Eye is an innovative outdoor safety companion designed to assist visually
 - **Hardware**: Phytium Pi Evaluation Kit v2.1 (SoC: E2000Q, 4GiB RAM) Development Board (Core 0~2)
 - **Operating System**: Ubuntu Linux 20.04 LTS, with custom drivers and device tree, Linux kernel 5.10 (modified)
 - **Software**: OpenCV4 (Python) v4.9.0.80, MNN (OpenCV4), Custom YOLOv8n, Python 3.8, PySide6 v6.6.2
+- **Sensors**:
+  - USB Camera (Model: LeTMC-520, Protocol: USB 3.0)
 
 ### Slave System
 
@@ -78,7 +80,7 @@ Wisdom Eye is an innovative outdoor safety companion designed to assist visually
   - Temperature & Humidity Sensor (Model: DHT11, Protocol: OneWire)
   - GPS Module & 3-axis Accelerometer and Compass (Model: Zhongkewei ATGM336H-5N, Protocol: UART TTL-232)
   - TTS Chinese Voice Broadcasting Module (Model: iFlytek XFS5152CE, Protocol: I2C)
-  - USB Camera (Model: LeTMC-520, Protocol: USB 3.0)
+
 
 ## Call for Contributions
 

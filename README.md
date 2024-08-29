@@ -5,7 +5,8 @@
 **Team Name**: Phytium Flyers  
 **Team ID**: CICC1085  
 **Competition**: The 8th National College Students Integrated Circuit Innovation and Entrepreneurship Competition - Phytium Cup  
-**Award**: National Finals First Prize
+**Award**: National Finals First Prize  
+**Team Motto**: "Together, We Soar Beyond Limits"  
 
 ## Introduction
 
@@ -40,10 +41,10 @@ Wisdom Eye is an innovative outdoor safety companion designed to assist visually
 
 ## Project Members
 
-- **Lawrence Leung**: Lead Developer, System Architect, undergraduate student of GDUT
-- **Kwokying J**: Developer, Guardian Client Interface, undergraduate student of GDUT
-- **AFELL**: Developer, Sensor Integration, undergraduate student of GDUT
-- **Advisors**: Prof. Xia Yimin (School of Integrated Circuits, Guangdong University of Technology) *(E-mail: [xiayimin@gdut.edu.cn](mailto:xiayimin@gdut.edu.cn))*
+- **Lawrence Leung**: Lead Developer, System Architect, undergraduate student of School of Automation, GDUT
+- **Kwokying J**: Developer, Guardian Client Interface, undergraduate student of School of Automation, GDUT
+- **AFELL (Zhou Zilin)**: Developer, Sensor Integration, undergraduate student of School of Automation, GDUT  
+- **Advisor**: Assiociate Prof. Xia Yimin (School of Integrated Circuits, GDUT) *(E-mail: [xiayimin@gdut.edu.cn](mailto:xiayimin@gdut.edu.cn))*
 
 ## Repository Structure
 
@@ -87,6 +88,7 @@ We invite developers and researchers worldwide to contribute to and enhance Wisd
 
 1. **TTS Voice Delay on Slave**: There is a noticeable delay in the TTS voice output due to hardware limitations. Contributions are welcome to address this blocking delay in the hardware output.
 2. **Performance Competition Between CV and Neural Network Inference on Master**: The current solution involves fixed delays to balance performance. We seek contributions on dynamically adjusting performance between these tasks.
+3. Other issues to be discovered. If there's any other issues found, please notice me via e-mail.
 
 ## License
 
@@ -94,4 +96,4 @@ This project is licensed under the [GPL v3 License](LICENSE). Please refer to th
 
 ## Acknowledgments
 
-We would like to thank our advisors and the National College Students Integrated Circuit Innovation and Entrepreneurship Competition committee for their support.
+We would like to thank our advisor, Tianjin Phytium Information Technology Co., Ltd. the National College Students Integrated Circuit Innovation and Entrepreneurship Competition committee for their support.

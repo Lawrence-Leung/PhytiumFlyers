@@ -42,7 +42,7 @@ Wisdom Eye is an innovative outdoor safety companion designed to assist visually
 ## Project Members
 
 - **Lawrence Leung**: Lead Developer, System Architect, undergraduate student of School of Automation, GDUT
-- **Kwokying J**: Developer, Guardian Client Interface, undergraduate student of School of Integrated Circuits, GDUT
+- **Kwokying Jim**: Developer, Guardian Client Interface, undergraduate student of School of Integrated Circuits, GDUT
 - **AFELL (Zhou Zilin)**: Developer, Sensor Integration, undergraduate student of School of Integrated Circuits, GDUT  
 - **Advisor**: Assiociate Prof. Xia Yimin (School of Integrated Circuits, GDUT) *(E-mail: [xiayimin@gdut.edu.cn](mailto:xiayimin@gdut.edu.cn))*
 

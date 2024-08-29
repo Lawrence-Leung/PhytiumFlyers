@@ -96,4 +96,8 @@ This project is licensed under the [GPL v3 License](LICENSE). Please refer to th
 
 ## Acknowledgments
 
-We would like to thank our advisor, Tianjin Phytium Information Technology Co., Ltd. the National College Students Integrated Circuit Innovation and Entrepreneurship Competition committee for their support.
+We would like to thank people and organizations for support, as listed below:  
+Prof. Xia Yimin, our advisor,  
+Lin Peiyang (postgraduate at Xidian University) and Li Yue (postgraduate at GDUT), both of whom are the second prize winner of national finals last year,  
+Tianjin Phytium Information Technology Co., Ltd.,  
+The National College Students Integrated Circuit Innovation and Entrepreneurship Competition committee.

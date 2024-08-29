@@ -24,8 +24,8 @@ Wisdom Eye is an innovative outdoor safety companion designed to assist visually
 
 ### System Architecture
 
-- **Master System**: Runs on a high-performance core, responsible for image processing, system state management, and guardian client display.
-- **Slave System**: Runs on a high-real-time core, handling sensor data processing and voice feedback output.
+- **Master System**: Runs on 3 high-performance cores, responsible for image processing, system state management, and guardian client display.
+- **Slave System**: Runs on a single real-time core, handling sensor data processing and voice feedback output.
 
 ### OpenAMP Communication
 
@@ -66,13 +66,13 @@ Wisdom Eye is an innovative outdoor safety companion designed to assist visually
 
 ### Master System
 
-- **Hardware**: Phytium Pi v2.1 (E2000Q, 4GiB RAM) Development Board (Core 0~2)
+- **Hardware**: Phytium Pi Evaluation Kit v2.1 (SoC: E2000Q, 4GiB RAM) Development Board (Core 0~2)
 - **Operating System**: Ubuntu Linux 20.04 LTS, with custom drivers and device tree, Linux kernel 5.10 (modified)
 - **Software**: OpenCV4 (Python) v4.9.0.80, MNN (OpenCV4), Custom YOLOv8n, Python 3.8, PySide6 v6.6.2
 
 ### Slave System
 
-- **Hardware**: Phytium Pi v2.1 (E2000Q, 4GiB RAM) Development Board (Core 3)
+- **Hardware**: Phytium Pi Evaluation Kit v2.1 (SoC: E2000Q, 4GiB RAM) Development Board (Core 3)
 - **Operating System**: FreeRTOS
 - **Sensors**:
   - Temperature & Humidity Sensor (Model: DHT11, Protocol: OneWire)

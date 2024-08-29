@@ -1,0 +1,21 @@
+menu "Littlefs configuration"
+
+choice LITTLEFS_DEVICE_TYPE
+    prompt "Select littlefs medium"
+    default LITTLE_FS_ON_FSPIM_SFUD
+    help
+        Select medium to store LittleFS
+    config LITTLE_FS_ON_FSPIM_SFUD
+        bool
+        prompt "Use spi nor flash(sfud)"        
+        select USE_SPI
+        select USE_FSPIM
+        select SFUD_CTRL_FSPIM
+    config LITTLE_FS_DRY_RUN
+        bool
+        prompt "Dry run on ram(volatile)/file(persist)"
+        select USE_FATFS
+        help
+            Run Littlefs in emulated block device
+endchoice # LITTLEFS_DEVICE_TYPE
+endmenu

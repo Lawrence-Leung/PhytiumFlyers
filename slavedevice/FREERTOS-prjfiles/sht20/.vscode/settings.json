@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "i2c_example.h": "c",
+        "sdkconfig.h": "c",
+        "fdebug.h": "c",
+        "ftypes.h": "c",
+        "timers.h": "c",
+        "fi2c_os.h": "c",
+        "freertos.h": "c",
+        "shell.h": "c",
+        "shell_port.h": "c",
+        "fi2c_hw.h": "c",
+        "fi2c.h": "c",
+        "finterrupt.h": "c",
+        "fio_mux.h": "c"
+    }
+}

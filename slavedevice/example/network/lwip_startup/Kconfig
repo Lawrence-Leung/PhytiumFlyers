@@ -1,0 +1,6 @@
+mainmenu "Phytium FreeRTOS Configuration"
+
+	source "./src/Kconfig"
+	
+source "$(SDK_DIR)/../freertos.kconfig"
+

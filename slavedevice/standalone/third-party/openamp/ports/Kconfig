@@ -1,0 +1,64 @@
+
+menu "OpenAmp"
+
+    config USE_OPENAMP
+        bool "OpenAMP Support"
+        select USE_LIBMETAL
+        help
+            This option enables the OpenAMP library
+        if USE_OPENAMP
+            config USE_OPENAMP_IPI
+                bool "Remoteproc use ipi"
+                help
+                    This configuration enables IPI working mode in OpenAMP mode
+
+            config OPENAMP_RESOURCES_ADDR
+                hex "Openamp resource address"
+                default "0xa0000000"
+            
+            config VRING_TX_ADDR
+                hex "Vring tx address"
+                default "0xa0020000"
+
+            config VRING_RX_ADDR
+                hex "Vring rx address"
+                default "0xa0024000"
+            
+            config VRING_SIZE
+                hex "Vring size"
+                default "0x100"
+            
+            config POLL_BASE_ADDR
+                hex "table of base physical address of each of the pages in the I/O region"
+                default "0xa0224000"
+            
+            config SKIP_SHBUF_IO_WRITE
+                bool 
+                prompt "Skip local rvdev->shbuf_io"
+                help
+                    rpmsg_virtio_send_offchannel_raw skip rvdev->shbuf_io metal_io_block_write
+                default n
+            
+            config USE_MASTER_VRING_DEFINE
+                bool
+                prompt "Use the Vring definition in the master"
+                default n
+
+            	menu "Baremetal config"
+            
+            choice
+            prompt "Select mem default attribute"
+            default MEM_NO_CACHE
+            config MEM_NO_CACHE
+                bool "Outer and Inner Non-cacheable , Outer Shareable"
+            config MEM_WRITE_THROUGH
+                bool "Outer and Inner Write-Through, Read-Allocate No Write-Allocate , Outer Shareable"
+            config MEM_NORMAL
+                bool "Outer and Inner Write-Back, Read-Allocate Write-Allocate , Outer Shareable"
+            endchoice
+	endmenu 
+
+
+        endif
+
+endmenu

@@ -1,0 +1,100 @@
+
+	config CONSOLE_PORT
+        string "Default serial port"
+        default "/dev/ttyS3"
+        help
+            The serial port that connected to the Phytium chip. 
+
+
+    config CONSOLE_YMODEM_RECV_DEST
+        string "Default ymodem receiving destination"
+        default "./"
+        help
+            Ymodel receiver file destination. 
+
+
+	choice CONSOLE_BAUD
+        prompt "Default baud rate"
+        default CONSOLE_BAUD_115200B
+        help
+            Default baud rate to use while communicating with the Phytium chip. 
+
+        config CONSOLE_BAUD_115200B
+            bool "115200 baud"
+        config CONSOLE_BAUD_230400B
+            bool "230400 baud"
+        config CONSOLE_BAUD_921600B
+            bool "921600 baud"
+        config CONSOLE_BAUD_2MB
+            bool "2Mbaud"
+        config CONSOLE_BAUD_OTHER
+            bool "Other baud rate"
+    endchoice
+
+    config CONSOLE_BAUD_OTHER_VAL
+        int "Other baud rate value" if CONSOLE_BAUD_OTHER
+        default 115200
+
+    config CONSOLE_BAUD
+        int
+        depends on !IDF_CMAKE
+        default 115200 if CONSOLE_BAUD_115200B
+        default 230400 if CONSOLE_BAUD_230400B
+        default 921600 if CONSOLE_BAUD_921600B
+        default 2000000 if CONSOLE_BAUD_2MB
+        default CONSOLE_BAUD_OTHER_VAL if CONSOLE_BAUD_OTHER
+
+	choice CONSOLE_UPLOAD_TYPE
+        prompt "Method to upload image"
+        default CONSOLE_UPLOAD_YMODEM
+        help
+            Select the method to upload image into Phytium chip. 
+
+        config CONSOLE_UPLOAD_TFTP
+            bool "tftp(network)"
+        config CONSOLE_UPLOAD_YMODEM
+            bool "ymodem(serial)"
+    endchoice
+
+    if CONSOLE_UPLOAD_TFTP
+
+	menu "TFTP upload config"
+		config UBOOT_BOARD_IP
+			string "Default uboot local ip"
+			default "192.168.4.20"
+			help
+				Set the local address of the development board
+
+		config UBOOT_HOST_IP
+			string "Default uboot host ip"
+			default "192.168.4.50"
+			help
+				Set ipv4 host address of the development board
+		
+		config UBOOT_GATEWAY_IP
+			string "Default uboot gateway ip"
+			default "192.168.4.1"
+			help
+				Set ipv4 address for developer host-board gateway
+
+		config UBOOT_ELF_BOOT_ADDR
+			string "Boot address to load image"
+			default "0xf0000000"
+			help
+				Sets where development board ELF will jump
+
+	endmenu 
+
+    endif
+
+    config CONSOLE_UPLOAD_DIR
+        string "Folder to save uploading image"
+        default "/mnt/d/tftboot"
+        help
+            Set where to put bin/elf image before upload
+
+    config CONSOLE_UPLOAD_IMAGE_NAME
+        string "Name of uploading image"
+        default "baremetal" if USE_BAREMETAL
+        help
+            Set name of bin/elf image without suffix

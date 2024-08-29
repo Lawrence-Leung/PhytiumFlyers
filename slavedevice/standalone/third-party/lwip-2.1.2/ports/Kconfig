@@ -1,0 +1,24 @@
+menu "LWIP Port Configuration"
+
+    choice LWIP_GMAC_CTRL_TYPE
+        prompt "Gmac Drivers"
+        default LWIP_FGMAC
+        help
+            Select Gmac Driver for Lwip
+
+        config LWIP_FXMAC
+            select FREERTOS_USE_XMAC
+            bool "FXMAC"
+        
+        config LWIP_FGMAC
+            select FREERTOS_USE_GMAC
+            bool "FGMAC"
+
+
+    endchoice # LWIP_GMAC_CTRL_TYPE
+
+    config LWIP_RX_POLL
+        bool "RX_POLL_MODE"
+        default n
+    
+endmenu

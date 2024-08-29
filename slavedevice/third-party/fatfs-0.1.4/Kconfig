@@ -1,0 +1,1 @@
+source "$(STANDALONE_DIR)/third-party/fatfs-0.1.4/Kconfig"

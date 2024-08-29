@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "shell.h": "c",
+        "shell_port.h": "c",
+        "fpl011_os.h": "c",
+        "fpl011.h": "c",
+        "fio_mux.h": "c",
+        "uart.h": "c",
+        "fsleep.h": "c",
+        "fpl011_hw.h": "c",
+        "gps.h": "c"
+    }
+}

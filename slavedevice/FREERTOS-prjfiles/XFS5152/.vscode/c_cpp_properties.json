@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/inc",
+                "E:/phytium-dev-windows-nt/slavedevice/drivers/gpio/fgpio",
+                "E:/phytium-dev-windows-nt/slavedevice/drivers/i2c",
+                "E:/phytium-dev-windows-nt/slavedevice/standalone/common",
+                "E:/phytium-dev-windows-nt/slavedevice/standalone/drivers/pin/fgpio",
+                "E:/phytium-dev-windows-nt/slavedevice/standalone/drivers/i2c/fi2c",
+                "E:/phytium-dev-windows-nt/slavedevice/third-party/freertos/include",
+                "E:/phytium-dev-windows-nt/slavedevice/third-party/freertos/portable",
+                "E:/phytium-dev-windows-nt/slavedevice/third-party/letter-shell-3.1/src",
+                "E:/phytium-dev-windows-nt/slavedevice/third-party/letter-shell-3.1/port"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64"
+        }
+    ],
+    "version": 4
+}

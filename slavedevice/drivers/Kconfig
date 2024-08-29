@@ -1,0 +1,121 @@
+menu "Freertos Uart Drivers"
+    config FREERTOS_USE_UART
+        bool
+        prompt "Use Freertos uart driver"
+        default n
+endmenu
+
+menu "Freertos Pwm Drivers"
+    config FREERTOS_USE_PWM
+        bool
+        prompt "Use Freertos pwm driver"
+        default n
+        select USE_PWM
+        select USE_FPWM
+endmenu
+
+menu "Freertos Qspi Drivers"
+    config FREERTOS_USE_QSPI
+        bool
+        prompt "Use Freertos qspi driver"
+        default n
+        select USE_QSPI
+        select USE_FQSPI
+endmenu
+
+menu "Freertos Wdt Drivers"
+    config FREERTOS_USE_WDT
+        bool
+        prompt "Use Freertos wdt driver"
+        default n
+        select USE_WDT
+        select USE_FWDT
+endmenu
+
+menu "Freertos Eth Drivers"
+    config FREERTOS_USE_XMAC
+        select ENABLE_FXMAC
+        bool
+        prompt "Use Freertos xmac driver"
+        default n
+    
+    config FREERTOS_USE_GMAC
+        select ENABLE_FGMAC
+        bool
+        prompt "Use Freertos gmac driver"
+        default n
+endmenu
+
+menu "Freertos Gpio Drivers"
+    config FREERTOS_USE_GPIO
+    bool
+    prompt "Use Freertos gpio driver"
+    default n
+endmenu
+
+menu "Freertos Spim Drivers"
+    config FREERTOS_USE_FSPIM
+        bool
+        prompt "Use Freertos spim driver"
+        default n
+        select USE_SPI
+        select USE_FSPIM
+endmenu
+
+menu "Freertos DMA Drivers"
+    config FREERTOS_USE_FDDMA
+        bool
+        prompt "Use Freertos ddma driver"
+        default n
+
+    config FREERTOS_USE_FGDMA
+        bool
+        prompt "Use Freertos gdma driver"
+        default n
+endmenu
+
+menu "Freertos Adc Drivers"
+    config FREERTOS_USE_ADC
+        bool
+        prompt "Use Freertos adc driver"
+        default n
+        select USE_ADC
+        select USE_FADC
+endmenu
+
+menu "Freertos Can Drivers"
+    config FREERTOS_USE_CAN
+        bool
+        prompt "Use Freertos can driver"
+        default n
+        select USE_CAN
+        select USE_FCAN
+endmenu
+
+menu "Freertos I2c Drivers"
+    config FREERTOS_USE_I2C
+        bool
+        prompt "Use Freertos i2c driver"
+        default n
+endmenu
+
+menu "Freertos Mio Drivers"
+    config FREERTOS_USE_MIO
+        bool
+        prompt "Use Freertos mio driver"
+        default n
+endmenu
+
+menu "Freertos Timer Drivers"
+    config FREERTOS_USE_TIMER
+        bool
+        prompt "Use Freertos timer driver"
+        default n
+endmenu
+
+menu "Freertos Media Drivers"
+    config FREERTOS_USE_MEDIA
+        bool
+        prompt "Use Freertos media driver"
+        default n
+endmenu

@@ -1,0 +1,51 @@
+menu "Sfud configuration"
+    
+
+    config SFUD_CTRL_FSPIM
+        bool
+        prompt "Use fspim"        
+        select USE_SPI
+        select USE_FSPIM
+        default n
+
+    if SFUD_CTRL_FSPIM
+    choice SFUD_TRANS_MODE
+        prompt "Trans mode"
+        default SFUD_TRANS_MODE_POLL_FIFO
+        help
+            Select Transfer Mode as Poll or Interrupt
+
+        config SFUD_TRANS_MODE_POLL_FIFO
+            bool "Poll"
+
+        config SFUD_TRANS_MODE_INTRRUPT
+            bool "Interrupt"
+
+    endchoice #SFUD_TRANS_MODE
+    endif
+
+    config SFUD_CTRL_FQSPI
+            bool
+            prompt "Use FQSPI"        
+            select USE_QSPI
+            select USE_FQSPI
+            default n
+    if SFUD_CTRL_FQSPI
+    choice SFUD_QSPI_READ_MODE
+        prompt "Qspi read mode"
+        default SFUD_QSPI_READ_MODE_QUAD_READ
+        help
+            Select QSPI Read Mode as Read or Dual or Quad
+
+        config SFUD_QSPI_READ_MODE_READ
+            bool "Read"
+
+        config SFUD_QSPI_READ_MODE_DUAL_READ
+            bool "Dual read"
+
+        config SFUD_QSPI_READ_MODE_QUAD_READ
+            bool "Quad read"
+
+    endchoice #SFUD_QSPI_READ_MODE
+    endif
+endmenu

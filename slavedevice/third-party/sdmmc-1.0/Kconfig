@@ -1,0 +1,11 @@
+menu "Sdmmc configuration"
+    config SDMMC_USE_FSDMMC        
+        bool "Fsdmmc"
+        select USE_SDMMC
+        select ENABLE_FSDMMC
+
+    config SDMMC_USE_FSDIO
+        bool "Fsdio"
+        select USE_SDMMC
+        select ENABLE_FSDIO
+endmenu

@@ -1,0 +1,5 @@
+menu "Build project name"
+	config TARGET_NAME
+		string "Write name"
+		default "baremetal"
+endmenu

@@ -1,0 +1,283 @@
+
+#
+# Project Configuration
+#
+CONFIG_TARGET_NAME="export_test"
+# end of Project Configuration
+
+CONFIG_EXPORT_TYPE_RTT=y
+CONFIG_USE_BAREMETAL=y
+
+#
+# Platform Setting
+#
+
+#
+# Arch Configuration
+#
+# CONFIG_TARGET_ARMV8_AARCH32 is not set
+CONFIG_TARGET_ARMV8_AARCH64=y
+CONFIG_USE_CACHE=y
+CONFIG_USE_MMU=y
+# CONFIG_USE_SYS_TICK is not set
+# CONFIG_MMU_DEBUG_PRINTS is not set
+# CONFIG_BOOT_WITH_FLUSH_CACHE is not set
+# end of Arch Configuration
+
+#
+# Board Configuration
+#
+# CONFIG_TARGET_FT2004 is not set
+# CONFIG_TARGET_D2000 is not set
+# CONFIG_TARGET_E2000Q is not set
+CONFIG_TARGET_E2000D=y
+# CONFIG_TARGET_E2000S is not set
+CONFIG_TARGET_E2000=y
+CONFIG_DEFAULT_DEBUG_PRINT_UART1=y
+# CONFIG_DEFAULT_DEBUG_PRINT_UART0 is not set
+# CONFIG_DEFAULT_DEBUG_PRINT_UART2 is not set
+# end of Board Configuration
+
+#
+# Components Configuration
+#
+CONFIG_USE_SPI=y
+CONFIG_USE_FSPIM=y
+CONFIG_USE_QSPI=y
+
+#
+# Qspi Configuration
+#
+CONFIG_USE_FQSPI=y
+# end of Qspi Configuration
+
+CONFIG_USE_GIC=y
+CONFIG_ENABLE_GICV3=y
+CONFIG_USE_SERIAL=y
+
+#
+# Usart Configuration
+#
+CONFIG_ENABLE_Pl011_UART=y
+# end of Usart Configuration
+
+CONFIG_USE_GPIO=y
+CONFIG_ENABLE_FGPIO=y
+CONFIG_USE_ETH=y
+
+#
+# Eth Configuration
+#
+CONFIG_ENABLE_FXMAC=y
+# CONFIG_ENABLE_FGMAC is not set
+CONFIG_FXMAC_PHY_COMMON=y
+# CONFIG_FXMAC_PHY_YT is not set
+# end of Eth Configuration
+
+CONFIG_USE_CAN=y
+
+#
+# CAN Configuration
+#
+CONFIG_USE_FCAN=y
+CONFIG_FCAN_USE_CANFD=y
+# end of CAN Configuration
+
+CONFIG_USE_I2C=y
+CONFIG_USE_FI2C=y
+CONFIG_USE_TIMER=y
+
+#
+# Hardware Timer Configuration
+#
+CONFIG_ENABLE_TIMER_TACHO=y
+# end of Hardware Timer Configuration
+
+CONFIG_USE_MIO=y
+
+#
+# Hardware Mio Configuration
+#
+CONFIG_ENABLE_MIO=y
+# end of Hardware Mio Configuration
+
+CONFIG_USE_SDMMC=y
+# CONFIG_ENABLE_FSDMMC is not set
+CONFIG_ENABLE_FSDIO=y
+CONFIG_USE_PCIE=y
+
+#
+# Pcie Configuration
+#
+CONFIG_ENABLE_F_PCIE=y
+# end of Pcie Configuration
+
+CONFIG_USE_WDT=y
+
+#
+# FWDT Configuration
+#
+CONFIG_USE_FWDT=y
+# end of FWDT Configuration
+
+CONFIG_USE_DMA=y
+CONFIG_ENABLE_FGDMA=y
+CONFIG_ENABLE_FDDMA=y
+CONFIG_USE_NAND=y
+
+#
+# NAND Configuration
+#
+
+#
+# FNAND ip config
+#
+CONFIG_ENABLE_FNAND=y
+CONFIG_FNAND_COMMON_DEBUG_EN=y
+# CONFIG_FNAND_DMA_DEBUG_EN is not set
+# CONFIG_FNAND_TOGGLE_DEBUG_EN is not set
+# CONFIG_FNAND_ONFI_DEBUG_EN is not set
+# end of FNAND ip config
+# end of NAND Configuration
+
+# CONFIG_USE_RTC is not set
+CONFIG_USE_SATA=y
+
+#
+# FSATA Configuration
+#
+CONFIG_ENABLE_FSATA=y
+# end of FSATA Configuration
+
+CONFIG_USE_USB=y
+CONFIG_ENABLE_USB_FXHCI=y
+CONFIG_USE_ADC=y
+
+#
+# ADC Configuration
+#
+CONFIG_USE_FADC=y
+# end of ADC Configuration
+
+CONFIG_USE_PWM=y
+
+#
+# FPWM Configuration
+#
+CONFIG_USE_FPWM=y
+# end of FPWM Configuration
+
+CONFIG_USE_IPC=y
+CONFIG_ENABLE_FSEMAPHORE=y
+CONFIG_USE_MEDIA=y
+
+#
+# Media Configuration
+#
+CONFIG_ENABLE_FDC_DP=y
+# CONFIG_ENABLE_FDC_DP_USE_LIB is not set
+# end of Media Configuration
+
+CONFIG_USE_SCMI_MHU=y
+
+#
+# Scmi Configuration
+#
+CONFIG_ENABLE_SCMI_MHU=y
+# end of Scmi Configuration
+# end of Components Configuration
+# end of Platform Setting
+
+#
+# Building Option
+#
+# CONFIG_LOG_VERBOS is not set
+# CONFIG_LOG_DEBUG is not set
+# CONFIG_LOG_INFO is not set
+# CONFIG_LOG_WARN is not set
+CONFIG_LOG_ERROR=y
+# CONFIG_LOG_NONE is not set
+CONFIG_USE_DEFAULT_INTERRUPT_CONFIG=y
+CONFIG_INTERRUPT_ROLE_MASTER=y
+# CONFIG_INTERRUPT_ROLE_SLAVE is not set
+# CONFIG_LOG_EXTRA_INFO is not set
+# CONFIG_LOG_DISPALY_CORE_NUM is not set
+# CONFIG_BOOTUP_DEBUG_PRINTS is not set
+
+#
+# Linker Options
+#
+# CONFIG_AARCH32_RAM_LD is not set
+CONFIG_AARCH64_RAM_LD=y
+# CONFIG_USER_DEFINED_LD is not set
+CONFIG_LINK_SCRIPT_ROM=y
+CONFIG_ROM_START_UP_ADDR=0x80100000
+CONFIG_ROM_SIZE_MB=1
+CONFIG_LINK_SCRIPT_RAM=y
+CONFIG_RAM_START_UP_ADDR=0x81000000
+CONFIG_RAM_SIZE_MB=64
+CONFIG_HEAP_SIZE=2
+CONFIG_STACK_SIZE=0x400
+CONFIG_FPU_STACK_SIZE=0x1000
+# end of Linker Options
+
+#
+# Compiler Options
+#
+
+#
+# Cross-Compiler Setting
+#
+CONFIG_GCC_OPTIMIZE_LEVEL=0
+# CONFIG_USE_EXT_COMPILER is not set
+# CONFIG_USE_KLIN_SYS is not set
+# end of Cross-Compiler Setting
+
+CONFIG_OUTPUT_BINARY=y
+# end of Compiler Options
+
+# CONFIG_AUTO_GENERATE_MK_DEP is not set
+CONFIG_COMPILE_DRIVER_ONLY=y
+# end of Building Option
+
+#
+# Library Configuration
+#
+CONFIG_USE_NEW_LIBC=y
+# end of Library Configuration
+
+#
+# Third-Party Configuration
+#
+# CONFIG_USE_LWIP is not set
+# CONFIG_USE_LETTER_SHELL is not set
+# CONFIG_USE_AMP is not set
+# CONFIG_USE_SDMMC_CMD is not set
+# CONFIG_USE_YMODEM is not set
+# CONFIG_USE_SFUD is not set
+# CONFIG_USE_BACKTRACE is not set
+# CONFIG_USE_FATFS_0_1_4 is not set
+# CONFIG_USE_TLSF is not set
+# CONFIG_USE_SPIFFS is not set
+# CONFIG_USE_LITTLE_FS is not set
+# CONFIG_USE_LVGL is not set
+# CONFIG_USE_FREEMODBUS is not set
+# end of Third-Party Configuration
+
+#
+# PC Console Configuration
+#
+CONFIG_CONSOLE_PORT="/dev/ttyS3"
+CONFIG_CONSOLE_YMODEM_RECV_DEST="./"
+CONFIG_CONSOLE_BAUD_115200B=y
+# CONFIG_CONSOLE_BAUD_230400B is not set
+# CONFIG_CONSOLE_BAUD_921600B is not set
+# CONFIG_CONSOLE_BAUD_2MB is not set
+# CONFIG_CONSOLE_BAUD_OTHER is not set
+CONFIG_CONSOLE_BAUD_OTHER_VAL=115200
+CONFIG_CONSOLE_BAUD=115200
+# CONFIG_CONSOLE_UPLOAD_TFTP is not set
+CONFIG_CONSOLE_UPLOAD_YMODEM=y
+CONFIG_CONSOLE_UPLOAD_DIR="/mnt/d/tftboot"
+CONFIG_CONSOLE_UPLOAD_IMAGE_NAME="baremetal"
+# end of PC Console Configuration

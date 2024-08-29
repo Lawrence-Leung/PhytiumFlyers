@@ -1,0 +1,14 @@
+
+menu " Lwip startup test configuration"
+
+    config LWIP_IPV6_TEST
+        bool "Enable IPv6"
+        select LWIP_IPV6
+        default n
+
+    config LWIP_DHCP_TEST
+        bool "Enable DHCP"
+        select LWIP_DHCP_ENABLE
+        default n
+        
+endmenu

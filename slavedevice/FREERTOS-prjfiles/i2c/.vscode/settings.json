@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "i2c_example.h": "c",
+        "fi2c_os.h": "c",
+        "timers.h": "c",
+        "sdkconfig.h": "c",
+        "fdebug.h": "c",
+        "ftypes.h": "c",
+        "finterrupt.h": "c",
+        "fi2c_hw.h": "c",
+        "fi2c.h": "c",
+        "freertos.h": "c",
+        "task.h": "c"
+    }
+}

@@ -1,0 +1,10 @@
+#
+# For a description of the syntax of this configuration file,
+# see tools/kconfiglib/kconfig-language.txt.
+#
+
+
+mainmenu "Phytium Freertos Configuration"
+
+source "$(SDK_DIR)/../freertos.kconfig"
+

@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/home/lawrence/projects/Phytium2024-Local/slavedevice/**",
+                "/home/lawrence/projects/Phytium2024-Local/slavedevice/third-party/freertos/portable/GCC/ft_platform/aarch64",
+                "${workspaceFolder}/FREERTOS-prjfiles/dht11_finished/inc"
+            ],
+            "defines": [],
+            "compilerPath": "D:/mingw64/bin/g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+<<<<<<< HEAD
+            "intelliSenseMode": "gcc-x64"
+=======
+            "intelliSenseMode": "gcc-arm64",
+            "compilerPathInCppPropertiesJson": "/home/lawrence/projects/Phytium2024-Local/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc",
+            "mergeConfigurations": false,
+            "browse": {
+                "path": [
+                    "/home/lawrence/projects/Phytium2024-Local/slavedevice/**",
+                    "/home/lawrence/projects/Phytium2024-Local/slavedevice/third-party/freertos/portable/GCC/ft_platform/aarch64",
+                    "/home/lawrence/projects/Phytium2024-Local/slavedevice"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+>>>>>>> dc5646149216933681afd12240c7050f50f9f00f
+        }
+    ],
+    "version": 4
+}

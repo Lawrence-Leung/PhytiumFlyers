@@ -1,0 +1,24 @@
+{
+    "files.associations": {
+        "gpio_io_irq.h": "c",
+        "dht11.h": "c",
+        "string.h": "c",
+        "freertos.h": "c",
+        "fdebug.h": "c",
+        "fsleep.h": "c",
+        "stdio.h": "c",
+        "ftypes.h": "c",
+        "fkernel.h": "c",
+        "fgpio_os.h": "c",
+        "shell.h": "c",
+        "shell_port.h": "c",
+        "task.h": "c",
+        "fgpio.h": "c",
+        "rpmsg-echo.h": "c",
+        "gps.h": "c",
+        "uart.h": "c",
+        "syn6288.h": "c",
+        "speech_i2c.h": "c",
+        "gpio_init.h": "c"
+    }
+}

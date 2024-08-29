@@ -1,0 +1,30 @@
+mainmenu "Phytium Baremetal Configuration"
+
+menu "Project Configuration"
+	config TARGET_NAME
+		string "Build Target Name"
+		default "baremetal"
+		help
+			Build Target name for the demo
+endmenu
+
+menu "Export Configuration"
+config COMPILE_DRIVER_ONLY
+    bool "Compile driver only"
+        default y
+        help
+            Compile only driver source files to test linkability
+
+choice EXPORT_TYPE
+    prompt "Select export type"
+	default EXPORT_TYPE_RTT
+	help	
+		Select Standalone export type
+
+    config EXPORT_TYPE_RTT
+        bool "RT-Thread"
+
+endchoice
+endmenu
+
+source "$(STANDALONE_SDK_ROOT)/Kconfig"

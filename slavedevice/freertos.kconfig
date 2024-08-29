@@ -1,0 +1,28 @@
+STANDALONE_DIR := $(SDK_DIR)
+
+FREERTOS_SDK_DIR := $(SDK_DIR)/..
+FREERTOS_SDK_ROOT := $(SDK_DIR)/..
+
+config USE_FREERTOS
+    bool
+    default y
+
+
+source "$(SDK_DIR)/arch/arch.kconfig"
+source "$(SDK_DIR)/soc/soc.kconfig"
+source "$(SDK_DIR)/board/board.kconfig"
+source "$(SDK_DIR)/common/common.kconfig"
+source "$(SDK_DIR)/drivers/drivers.kconfig"
+source "$(SDK_DIR)/tools/build/build.kconfig"
+menu "Component Configuration"  
+    source "$(FREERTOS_SDK_DIR)/drivers/Kconfig"
+endmenu
+
+source "$(FREERTOS_SDK_DIR)/third-party/third-party.kconfig"
+
+menu "Kernel Configuration"
+    source "$(FREERTOS_SDK_DIR)/third-party/freertos/Kconfig"
+endmenu
+
+
+

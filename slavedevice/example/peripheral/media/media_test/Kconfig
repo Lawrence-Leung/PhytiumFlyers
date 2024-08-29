@@ -1,0 +1,8 @@
+#
+# For a description of the syntax of this configuration file,
+# see tools/kconfiglib/kconfig-language.txt.
+#
+
+
+source "$(SDK_DIR)/../freertos.kconfig"
+

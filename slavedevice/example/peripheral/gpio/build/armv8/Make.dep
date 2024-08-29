@@ -1,0 +1,293 @@
+/mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/build/armv8/aarch64/fcache.o: \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/fcache.c \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/fcache.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ftypes.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdint.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdint-gcc.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stddef.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/faarch64.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/soc/phytiumpi/fparameters.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/soc/phytiumpi/fparameters_comm.h
+/mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/build/armv8/aarch64/fexception.o: \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/fexception.c \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/fexception.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ftypes.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdint.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdint-gcc.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stddef.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/fassert.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/fprintk.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ferror_code.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ftypes.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/fdebug.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/stdio.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/_ansi.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/newlib.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/_newlib_version.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/config.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/ieeefp.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/features.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/cdefs.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/_default_types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdarg.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/reent.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/_ansi.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/_types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/lock.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_stdint.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/endian.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/_endian.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/select.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_sigset.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_timeval.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/timespec.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_timespec.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_pthreadtypes.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/sched.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/stdio.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/sdkconfig.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/soc/common/fcpu_info.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ferror_code.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/string.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_locale.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/strings.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/string.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/fprintk.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/fkernel.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/faarch64.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/finterrupt.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/soc/phytiumpi/fparameters.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/soc/phytiumpi/fparameters_comm.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/drivers/gic/fgic/fgic.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/../third-party/backtrace/backtrace.h
+/mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/build/armv8/aarch64/fgeneric_timer.o: \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/fgeneric_timer.c \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/soc/phytiumpi/fparameters.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/soc/phytiumpi/fparameters_comm.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ftypes.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdint.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdint-gcc.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stddef.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/fgeneric_timer.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/faarch64.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/sdkconfig.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/fassert.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/fprintk.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ferror_code.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ftypes.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/fkernel.h
+/mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/build/armv8/aarch64/fmmu.o: \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/fmmu.c \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/faarch64.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdint.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdint-gcc.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ftypes.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stddef.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/fcache.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/errno.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/reent.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/_ansi.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/newlib.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/_newlib_version.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/config.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/ieeefp.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/features.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/_types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/_default_types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/lock.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/fassert.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/fprintk.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ferror_code.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ftypes.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/fmmu.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/fprintk.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/sdkconfig.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/fkernel.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/arch/armv8/common/fl3cache.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/soc/phytiumpi/fparameters.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/soc/phytiumpi/fparameters_comm.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/fio.h
+/mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/build/armv8/gcc/fvectors_g.o: \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/gcc/fvectors_g.c \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ftypes.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdint.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdint-gcc.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stddef.h
+/mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/build/armv8/gcc/fgcc_debug.o: \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/gcc/fgcc_debug.c \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/stdio.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/_ansi.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/newlib.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/_newlib_version.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/config.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/ieeefp.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/features.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/cdefs.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/_default_types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stddef.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdarg.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/reent.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/_ansi.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/_types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/lock.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_stdint.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/endian.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/_endian.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/select.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_sigset.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_timeval.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/timespec.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_timespec.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_pthreadtypes.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/sched.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/stdio.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/fprintk.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/sdkconfig.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/../third-party/backtrace/backtrace.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/soc/phytiumpi/fparameters.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/soc/phytiumpi/fparameters_comm.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ftypes.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdint.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdint-gcc.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/soc/common/fearly_uart.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/fio.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ftypes.h
+/mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/build/armv8/aarch64/fsmcc.o: \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/fsmcc.c \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/fsmcc.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ftypes.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdint.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdint-gcc.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stddef.h
+/mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/build/armv8/common/fl3cache.o: \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/common/fl3cache.c \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/common/fl3cache.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/soc/phytiumpi/fparameters.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/soc/phytiumpi/fparameters_comm.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ftypes.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdint.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdint-gcc.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stddef.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/fio.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ftypes.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/sdkconfig.h
+/mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/build/armv8/common/fsetupcpp.o: \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/common/fsetupcpp.c \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/sdkconfig.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/fdebug.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/stdio.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/_ansi.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/newlib.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/_newlib_version.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/config.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/ieeefp.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/features.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/cdefs.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/_default_types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stddef.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdarg.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/reent.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/_ansi.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/_types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/lock.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_stdint.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/endian.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/_endian.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/select.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_sigset.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_timeval.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/timespec.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_timespec.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_pthreadtypes.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/sched.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/stdio.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ftypes.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdint.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdint-gcc.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/fprintk.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/soc/common/fcpu_info.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ftypes.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ferror_code.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/string.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_locale.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/strings.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/string.h
+/mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/build/armv8/common/fpsci.o: \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/common/fpsci.c \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/stdio.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/_ansi.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/newlib.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/_newlib_version.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/config.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/ieeefp.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/features.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/cdefs.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/_default_types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stddef.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdarg.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/reent.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/_ansi.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/_types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/lock.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_stdint.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/endian.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/_endian.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/select.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_sigset.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_timeval.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/timespec.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_timespec.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_pthreadtypes.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/sched.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/machine/types.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/stdio.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/arch/armv8/aarch64/fsmcc.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ftypes.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdint.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include/stdint-gcc.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/common/fpsci.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/fassert.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/fprintk.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ferror_code.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ftypes.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/arch/armv8/gcc/fcompiler.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/fdebug.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/sdkconfig.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/soc/common/fcpu_info.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/common/ferror_code.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/string.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/_locale.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/strings.h \
+ /mnt/e/phytium-dev-linux-x64/cross_tool/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/aarch64-none-elf/include/sys/string.h
+/mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/build/armv8/gcc/fboot.o: \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/gcc/fboot.S \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/sdkconfig.h
+/mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/build/armv8/gcc/fcrt0.o: \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/gcc/fcrt0.S \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/sdkconfig.h
+/mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/build/armv8/gcc/fsmccc_call.o: \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/gcc/fsmccc_call.S
+/mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/build/armv8/gcc/ftlb.o: \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/gcc/ftlb.S \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/arch/armv8/common/flinkage.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/arch/armv8/common/fmacro.h
+/mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/build/armv8/gcc/fvectors.o: \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/gcc/fvectors.S
+/mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/build/armv8/gcc/ftrace_uart.o: \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/standalone/arch/armv8/aarch64/gcc/ftrace_uart.S \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/arch/armv8/common/ftrace.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/soc/phytiumpi/fparameters.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/../../../standalone/../standalone/soc/phytiumpi/fparameters_comm.h \
+ /mnt/e/phytium-dev-windows-nt/slavedevice/example/peripheral/gpio/sdkconfig.h

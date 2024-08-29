@@ -1,0 +1,174 @@
+OUTPUT_FORMAT("elf32-littlearm", "elf32-littlearm", "elf32-littlearm")
+OUTPUT_ARCH(arm)
+ENTRY(_boot)
+MEMORY
+{
+    MEMORY_SPACE (rwx) : ORIGIN = 0x80100000, LENGTH = 0x1000000
+}
+SECTIONS
+{
+    .vectors : {
+        *(.boot)
+        . = ALIGN(64);
+        KEEP(*(.vectors))
+    } > MEMORY_SPACE
+    .text : {
+        *(.text*)
+        *(.gnu.linkonce.t.*)
+        *(.plt)
+        *(.gnu_warning)
+        *(.gcc_execpt_table)
+        *(.glue_7)
+        *(.glue_7t)
+        *(.vfp11_veneer)
+        *(.ARM.extab)
+        *(.gnu.linkonce.armextab.*)
+        *(.note.gnu.build-id)
+     } > MEMORY_SPACE
+    . = ALIGN(8);
+    .interp : {
+        KEEP (*(.interp))
+    } > MEMORY_SPACE
+    .note-ABI-tag : {
+        KEEP (*(.note-ABI-tag))
+    } > MEMORY_SPACE
+    .rodata :{
+        __rodata_start = .;
+        *(.rodata)
+        *(.rodata.*)
+        *(.gnu.linkonce.r.*)
+        __rodata_end = .;
+    } > MEMORY_SPACE
+    .rodata1 : {
+        __rodata1_start = .;
+        *(.rodata1)
+        *(.rodata1.*)
+        __rodata1_end = .;
+    } > MEMORY_SPACE
+    .amp_img :
+    {
+        amp_img_start = .;
+        KEEP(*(.my_amp_img))
+        amp_img_end = .;
+    } > MEMORY_SPACE
+.image_info :
+{
+    img_start = .;
+    KEEP(*(.my_image_info))
+    img_end = .;
+} > MEMORY_SPACE
+    .le_shell (ALIGN(64)):{
+        . = ALIGN(4096);
+        _shell_command_start = .;
+        KEEP (*(shellCommand))
+        _shell_command_end = .;
+        . = ALIGN(4096);
+        _shell_code_end = .;
+    } > MEMORY_SPACE
+    .init :{
+        KEEP (*(SORT_NONE(.init)))
+    } > MEMORY_SPACE
+    .fini :{
+        KEEP (*(SORT_NONE(.fini)))
+    } > MEMORY_SPACE
+    .eh_frame :{
+        KEEP (*(.eh_frame))
+    } > MEMORY_SPACE
+    .ARM.extab :{
+        *(.ARM.extab* .gnu.linkonce.armextab.*)
+    } > MEMORY_SPACE
+    .ARM.exidx :{
+        __exidx_start = .;
+        *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+        __exidx_end = .;
+    } > MEMORY_SPACE
+    .init_array : {
+        . = ALIGN(8);
+        __init_array_start = .;
+        KEEP (*(SORT(.init_array.*)))
+        KEEP (*(.init_array))
+        __init_array_end = .;
+    } > MEMORY_SPACE
+    .fini_array :{
+        . = ALIGN(8);
+        PROVIDE_HIDDEN (__fini_array_start = .);
+        KEEP (*(SORT(.fini_array.*)))
+        KEEP (*(.fini_array ))
+        PROVIDE_HIDDEN (__fini_array_end = .);
+    } > MEMORY_SPACE
+    .dtors :{
+        KEEP (*crtbegin.o(.dtors))
+        KEEP (*crtbegin?.o(.dtors))
+        KEEP (*(EXCLUDE_FILE (*crtend.o *crtend?.o ) .dtors))
+        KEEP (*(SORT(.dtors.*)))
+        KEEP (*(.dtors))
+        . = ALIGN(16);
+    } > MEMORY_SPACE
+    .gcc_except_table : {
+        . = ALIGN(8);
+        *(.gcc_except_table)
+        . = ALIGN(16);
+    } > MEMORY_SPACE
+    .data : {
+        __data_start__ = .;
+        *(.data)
+        . = ALIGN(4096);
+        __data_end__ = .;
+        __rom_end__ = .;
+    } > MEMORY_SPACE
+    .bss (NOLOAD): {
+        __bss_start__ = .;
+        _bss_start = __bss_start__;
+        *(.bss)
+        __bss_end__ = .;
+        _bss_end = __bss_end__;
+    } > MEMORY_SPACE
+    .sbss (NOLOAD) : {
+    __sbss_start__ = .;
+    *(.sbss)
+    *(.sbss.*)
+    *(.gnu.linkonce.sb.*)
+    __sbss_end__ = .;
+    } > MEMORY_SPACE
+    .heap (NOLOAD):{
+        . = ALIGN(16);
+        __end__ = .;
+        PROVIDE(end = .);
+        HeapBase = .;
+        _heap_start = .;
+        . += 1* 1M;
+        _heap_end = .;
+        HeapLimit = .;
+    } > MEMORY_SPACE
+    .stack (NOLOAD):{
+        . = ALIGN(16);
+        _supervisor_stack_end = .;
+        . += 0x1000;
+        _supervisor_stack = .;
+        __supervisor_stack = _supervisor_stack;
+        . = ALIGN(16);
+        _irq_stack_end = .;
+        . += 0x1000;
+        __irq_stack = .;
+        __sys_stack = .;
+        . += 0x1000;
+        . = ALIGN(16);
+        __sys_stack = .;
+        _abort_stack_end = .;
+        . += 0x1000;
+        . = ALIGN(16);
+        __abort_stack = .;
+        _fiq_stack_end = .;
+        . += 0x1000;
+        . = ALIGN(16);
+        __fiq_stack = .;
+        _undef_stack_end = .;
+        . += 0x1000;
+        . = ALIGN(16);
+        __undef_stack = .;
+    } > MEMORY_SPACE
+    .resource_table 0xc0000000: {
+ . = ALIGN(4);
+ *(.resource_table)
+    }
+}

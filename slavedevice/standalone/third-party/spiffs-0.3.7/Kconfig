@@ -1,0 +1,19 @@
+menu "Spiffs configuration"
+
+config SPIFFS_ON_FSPIM_SFUD
+    bool
+    prompt "Use fspim(sfud)"        
+    select USE_SPI
+    select USE_FSPIM
+    select SFUD_CTRL_FSPIM
+    default n
+
+config SPIFFS_ON_FQSPI_SFUD
+    bool
+    prompt "Use FQSPI(sfud)"        
+    select USE_QSPI
+    select USE_FQSPI
+    select SFUD_CTRL_FQSPI
+    default n
+
+endmenu

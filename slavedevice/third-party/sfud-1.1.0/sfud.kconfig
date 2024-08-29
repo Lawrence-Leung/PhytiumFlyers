@@ -1,0 +1,2 @@
+
+source "$(SDK_DIR)/third-party/sfud-1.1.0/Kconfig"

@@ -1,0 +1,44 @@
+#
+# For a description of the syntax of this configuration file,
+# see tools/kconfiglib/kconfig-language.txt.
+#
+
+
+mainmenu "Phytium Baremetal Configuration"
+
+	menu "Project Configuration"
+
+		menu " Baremetal Configuration"
+		config TARGET_NAME
+			string "Build Target Name"
+			default "openamp_core0"
+			help
+				Build Target name for the demo
+
+	endmenu
+
+
+	menu "AMP Config"
+
+		config IPI_IRQ_NUM
+			int "Communication interruption number between multiple cores"
+			default 0
+		
+		config IPI_IRQ_NUM_PRIORITY
+			int "Priority of internuclear communication interruption"
+			default 16
+
+		config IPI_CHN_BITMASK
+			int "Destination IPI cpu mask"
+			default 255
+			help
+				Each bit represents a CPU, for example, 0x3 represents CPU 0 and CPU 3 in the code.
+		
+	endmenu
+	
+endmenu
+
+
+
+source "$(SDK_DIR)/standalone.kconfig"
+

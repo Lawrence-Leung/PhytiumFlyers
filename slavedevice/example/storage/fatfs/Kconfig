@@ -1,0 +1,19 @@
+mainmenu "Phytium freertos Configuration"
+
+menu "Project Configuration"
+
+	config FATFS_BASIC_TEST
+		bool "Basic Test"
+		default y
+
+	config FATFS_SPEED_TEST
+		bool "Speed Test"
+		default n
+
+	config FATFS_CYCLE_TEST
+		bool "Cycle Test"
+		default n
+
+endmenu
+
+source "$(SDK_DIR)/../freertos.kconfig"

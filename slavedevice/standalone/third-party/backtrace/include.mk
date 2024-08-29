@@ -1,0 +1,9 @@
+
+
+ifdef CONFIG_USE_BACKTRACE
+THIRDP_CUR_DIR := $(SDK_DIR)/third-party
+
+BUILD_INC_PATH_DIR += $(THIRDP_CUR_DIR)/backtrace
+
+endif #CONFIG_USE_BACKTRACE
+

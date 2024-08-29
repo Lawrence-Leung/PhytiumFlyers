@@ -1,0 +1,252 @@
+menu "Build setup"
+
+config CHECK_DEPS
+	bool 	"Compiling deps"
+	default y
+	help
+		Dependency Tracking and Automatic Recompilation
+
+config OUTPUT_BINARY
+	bool "Build *.bin as Ouput"
+	default y
+	help
+		Build binary files *.bin as Outputs
+
+menu "Optimization options"
+
+choice
+	prompt "Optimization level"
+	default DEBUG_NOOPT if DEBUG_SYMBOLS
+	default DEBUG_FULLOPT if !DEBUG_SYMBOLS
+
+config DEBUG_NOOPT
+	bool "Suppress optimization"
+	help
+		Build without optimization.  This is often helpful when debugging code.
+
+config DEBUG_CUSTOMOPT
+	bool "Custom optimization"
+	help
+		Select a custom debug level.  This is often helpful if you suspect an
+		optimization level error and want to lower the level of optimization.
+
+config DEBUG_FULLOPT
+	bool "Normal, full optimization"
+	help
+		Build full optimization.  This is the normal case for production
+		firmware.
+
+endchoice # Optimization Level
+
+config DEBUG_ENABLE_ALL_WARNING
+	bool "Enable all warnings"
+	default true
+	help 
+		This enables all the warnings about constructions that some users consider 
+		questionable, and that are easy to avoid (or modify to prevent the warning),
+		even in conjunction with macros.
+
+config DEBUG_OPTLEVEL
+	string "Custom optimization level"
+	default "-O2"
+	depends on DEBUG_CUSTOMOPT
+	help
+		This string represents the custom optimization level that will be
+		used if DEBUG_CUSTOMOPT.
+
+config DEBUG_OPT_UNUSED_SECTIONS
+	bool "Optimization to eliminate the unused input sections"
+	default y if USE_COMPILE_CHAIN
+	# depends on ARCH_TOOLCHAIN_GNU
+	help
+		Use these options on systems where the linker can perform optimizations
+		to improve locality of reference in the instruction space.  Most systems
+		using the ELF object format have linkers with such optimizations.
+
+		Enable this option to optimization the unused input sections with the
+		linker by compiling with " -ffunction-sections -fdata-sections ", and
+		linking with " --gc-sections ".
+
+config DEBUG_LINK_MAP
+	bool "Generate link map file"
+	default y
+	help
+		Selecting this option will pass "-Map=$(TOPDIR)$(DELIM)nuttx.map" to ld
+		when linking NuttX ELF. That file can be useful for verifying
+		and debugging magic section games, and for seeing which
+		pieces of code get eliminated with DEBUG_OPT_UNUSED_SECTIONS.
+
+config CCACHE
+	bool "Use ccache"
+	default n
+	help
+		If enabled, ccache will be used during the build.
+		Build artifacts will be cached to a local storage, considerably
+		reducing build times.
+
+
+config ARCH_COVERAGE
+	bool "Enable code coverage analysis"
+	select HAVE_CXXINITIALIZE
+	default n
+	help
+		Generate code coverage
+
+config ARCH_COVERAGE_ALL
+	bool "Enable code coverage for the entire image"
+	depends on ARCH_COVERAGE
+	default y
+	help
+		This option activates code coverage instrumentation for the
+		entire image. If you don't enable this option, you have to
+		explicitly specify "-fprofile-generate -ftest-coverage" for
+		the files/directories you want to check. Enabling this option
+		will get image size increased and performance decreased
+		significantly.
+
+config LTO_FULL
+	bool "Gnu full lto (experimental)"
+	# depends on ARCH_TOOLCHAIN_GNU
+	help
+		Link time optimization is implemented as a GCC front end for a bytecode
+		bytecode representation of GIMPLE that is emitted in special sections
+		of .o files. Currently, LTO support is enabled in most ELF-based systems,
+		as well as darwin, cygwin and mingw systems.
+
+endmenu # Optimization Options
+
+menu "Debug options"
+
+config WALL_WARNING_ERROR
+	bool "All warnings is errors."
+	default n
+	help
+		Make all warnings into errors.
+
+config STRICT_PROTOTYPES
+	bool "Strict prototypes"
+	default n
+	help
+		Warn if a function is declared or defined without specifying the argument types.
+
+config DEBUG_SYMBOLS
+    bool "Generate debug symbols"
+	default n
+	help
+		Build with debug symbols (needed for use with a debugger).
+
+config FRAME_POINTER
+	bool "Compile the code with frame pointers"
+	default n
+	help
+		If you say y here the resulting image will be slightly
+		larger and slower, but it gives very useful debugging information
+		in case of bugs.
+
+config STACK_CANARIES
+	bool "Compiler stack canaries"
+	depends on ARCH_HAVE_STACKCHECK
+	default n
+	help
+		This option enables compiler stack canaries.
+		If stack canaries are supported by the compiler, it will emit
+		extra code that inserts a canary value into the stack frame when
+		a function is entered and validates this value upon exit.
+		Stack corruption (such as that caused by buffer overflow) results
+		in a fatal error condition for the running entity.
+		Enabling this option can result in a significant increase
+		in footprint and an associated decrease in performance.
+
+config OUTPUT_ASM_DIS
+	bool "Compile output .asm and .dis"
+	default n
+	help
+		Compiling .asm and .dis files can be time-consuming and is recommended 
+		only during the debugging phase where you need to assemble code.
+
+config ENABLE_WSHADOW
+    bool "Enable -wshadow warning"
+    help
+        Enable the -Wshadow warning in the compiler.
+        This option warns whenever a local variable shadows another 
+        local variable, parameter or global variable or whenever 
+        a built-in function is shadowed.
+
+config ENABLE_WUNDEF
+    bool "Enable -wundef warning"
+    help
+        Enable the -Wundef warning in the compiler.
+        This option warns if an undefined identifier is evaluated 
+        in an #if directive.
+
+
+config DEBUG_OPT_UNUSED_SECTIONS
+	bool "Optimization to eliminate the unused input sections"
+	default y
+	# depends on ARCH_TOOLCHAIN_GNU
+	help
+		Use these options on systems where the linker can perform optimizations
+		to improve locality of reference in the instruction space.  Most systems
+		using the ELF object format have linkers with such optimizations.
+
+		Enable this option to optimization the unused input sections with the
+		linker by compiling with " -ffunction-sections -fdata-sections ", and
+		linking with " --gc-sections ".
+
+config DOWNGRADE_DIAG_WARNING
+	bool  "Downgrade some diagnostics from errors to warning(-fpermissive)"
+	default y
+	help
+		Downgrade some diagnostics about nonconformant code from errors to warn-
+		ings. Thus, using ‘-fpermissive’ allows some nonconforming code to compile.
+
+endmenu # Debug Options
+
+
+menu "Lib"
+	choice "chosse libc"
+		prompt "Libc select"
+		default USE_COMPILE_CHAIN
+
+	config USE_COMPILE_CHAIN
+		bool "Using compilation chain"
+		help
+			when using the compilation chain, "libc.a" or "libc.so" can be selected based on actual needs. 
+
+	config USB_USER_DEFINED
+		bool "User defined"
+		help
+			The user uses an external libc as a library file for the project by adding related variables
+	endchoice
+endmenu # lib
+
+config ENABLE_CXX
+	bool  "Enable C++"
+	default n
+	help
+		Include C++ source file during compiling
+
+if ENABLE_CXX
+menu "C++ Options"
+ 
+	choice
+		prompt "C++ Version"
+		default SELECT_CXX_14
+
+		config SELECT_CXX_98
+			bool "C++98 (ANSI)"
+
+		config SELECT_CXX_11
+			bool "C++11"
+
+		config SELECT_CXX_14
+			bool "C++14"
+	endchoice
+
+endmenu
+endif
+
+source "$SDK_DIR/tools/build/ld/Kconfig"
+
+endmenu # Build Setup
+

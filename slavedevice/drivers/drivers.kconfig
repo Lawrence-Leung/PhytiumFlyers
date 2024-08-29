@@ -1,0 +1,259 @@
+menu "Drivers configuration"
+config USE_SPI
+    bool
+    prompt "Use spi"
+    default n
+    help
+        Include SPI modules and enable SPI
+
+    if USE_SPI
+        source "$(SDK_DIR)/drivers/spi/Kconfig"
+    endif
+
+config USE_QSPI
+    bool
+    prompt "Use qspi"
+    default n
+    help
+        Include QSPI modules and enable QSPI
+
+    if USE_QSPI
+        source "$(SDK_DIR)/drivers/qspi/Kconfig"
+    endif
+
+config USE_GIC
+    bool
+    prompt "Use gic"
+    default y
+    help
+        Include Generic Interrupt Controllor
+    
+    if USE_GIC
+        source "$(SDK_DIR)/drivers/gic/Kconfig"
+    endif
+
+config USE_SERIAL
+    bool
+    prompt "Use serial"
+    default n
+    help
+        Include serial modules and enable serial
+    
+    if USE_SERIAL
+        source "$(SDK_DIR)/drivers/serial/Kconfig"
+    endif
+
+
+config USE_GPIO
+    bool
+    prompt "Use gpio"
+    default n
+    help
+        Include GPIO modules and enable GPIO
+
+    if USE_GPIO
+        source "$(SDK_DIR)/drivers/pin/fgpio/Kconfig"
+    endif
+
+config USE_ETH
+    bool
+    prompt "Use eth"
+    default n
+    help
+        Include eth
+
+    if USE_ETH
+        source "$(SDK_DIR)/drivers/eth/Kconfig"
+    endif
+
+config USE_CAN
+    bool
+    prompt "Use can"
+    default n
+    help
+        Include can
+
+    if USE_CAN
+        source "$(SDK_DIR)/drivers/can/Kconfig"
+    endif
+
+config USE_I2C
+    bool
+    prompt "Use i2c"
+    default n
+    help
+        Include I2C modules and enable I2C
+
+    if USE_I2C
+        source "$(SDK_DIR)/drivers/i2c/Kconfig"
+    endif
+
+
+config USE_TIMER
+    bool
+    prompt "Use timer"
+    default n
+    help
+        Include Timer modules and enable Timer
+
+    if USE_TIMER
+        source "$(SDK_DIR)/drivers/timer/Kconfig"
+    endif
+
+config USE_MIO
+    bool
+    prompt "Use mio"
+    default n
+    help
+        Include Mio modules and enable Mio
+
+    if USE_MIO
+        source "$(SDK_DIR)/drivers/mio/Kconfig"
+    endif
+
+config USE_SDMMC
+    bool
+    prompt "Use sd/mmc"
+    default n
+    help
+        Include SD/MMC modules and enable Timer
+
+    if USE_SDMMC
+        source "$(SDK_DIR)/drivers/mmc/Kconfig"
+    endif
+
+config USE_PCIE
+    bool
+    prompt "Use pcie"
+    default n
+    help
+        Include PCIE
+
+    if USE_PCIE
+        source "$(SDK_DIR)/drivers/pcie/Kconfig"
+    endif
+
+config USE_WDT
+    bool
+    prompt "Use wdt"
+    default n
+    help
+        Include watchdog timer modules and enable watchdog timer
+
+    if USE_WDT
+        source "$(SDK_DIR)/drivers/watchdog/Kconfig"
+    endif
+
+
+config USE_DMA
+    bool
+    prompt "Use dma"
+    default n
+    help
+        Include DMA 
+
+    if USE_DMA
+        source "$(SDK_DIR)/drivers/dma/Kconfig"
+    endif
+    
+config USE_NAND
+    bool
+    prompt "Use nand"
+    help
+        Include NAND
+    
+    if USE_NAND
+        source "$(SDK_DIR)/drivers/nand/Kconfig"
+    endif
+
+config USE_RTC
+    bool
+    prompt "Use rtc"
+    default n
+    help
+        Include system rtc service
+
+    if USE_RTC
+        source "$(SDK_DIR)/drivers/rtc/Kconfig"
+    endif
+
+config USE_SATA
+    bool
+    prompt "Use sata"
+    default n
+    help
+        Include system sata service
+
+    if USE_SATA
+        source "$(SDK_DIR)/drivers/sata/Kconfig"
+    endif
+       
+config USE_USB
+    bool
+    prompt "Use usb"
+    default n
+    help
+        Include USB Subsystem
+
+    if USE_USB
+        source "$(SDK_DIR)/drivers/usb/Kconfig"
+    endif   
+    
+config USE_ADC
+    bool
+    prompt "Use adc"
+    default n
+    help
+        Include adc modules and enable adc
+
+    if USE_ADC
+        source "$(SDK_DIR)/drivers/adc/Kconfig"
+    endif
+    
+config USE_PWM
+    bool
+    prompt "Use pwm"
+    default n
+    help
+        Include system pwm
+
+    if USE_PWM
+        source "$(SDK_DIR)/drivers/pwm/Kconfig"
+    endif
+
+config USE_IPC
+    bool
+    prompt "Use ipc"
+    default n
+    help
+        Include IPC Service
+
+    if USE_IPC
+        source "$(SDK_DIR)/drivers/ipc/Kconfig"
+    endif
+
+
+config USE_MEDIA
+    bool
+    prompt "Use media"
+    default n
+    help
+        Include media drivers
+    
+    if USE_MEDIA
+        source "$(SDK_DIR)/drivers/media/Kconfig"
+    endif
+
+config USE_SCMI_MHU
+    bool
+    prompt "Use scmi_mhu"
+    default n
+    help
+        Include scmi_mhu drivers
+    
+    if USE_SCMI_MHU
+        source "$(SDK_DIR)/drivers/scmi/Kconfig"
+    endif
+
+endmenu
+

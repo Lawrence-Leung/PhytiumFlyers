@@ -1,0 +1,28 @@
+menu "MODBUS Configuration"
+
+    config USE_MODBUS_ASCII
+        prompt "ASCII mode"
+        bool
+        default n
+    config USE_MODBUS_RTU
+        prompt "RTU mode"
+        bool
+        default n
+    config USE_MODBUS_TCP
+        prompt "TCP mode"
+        bool
+        default n   
+
+    if (USE_MODBUS_RTU || USE_MODBUS_ASCII)
+    config USE_PER_TIMER
+        depends on TARGET_E2000
+        bool
+        default n
+        prompt "Use peripheral timer"
+        help
+            Include peripheral timer
+        source "$(STANDALONE_DIR)/drivers/timer/Kconfig"
+    endif
+
+endmenu
+    

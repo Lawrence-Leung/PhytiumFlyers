@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "i2c.h": "c",
+        "stdio.h": "c",
+        "speech_i2c.h": "c",
+        "gpio_init.h": "c",
+        "fgpio_os.h": "c"
+    }
+}

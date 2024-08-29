@@ -1,0 +1,9 @@
+config ENABLE_IOCTRL
+    bool
+    default y if TARGET_FT2004 || TARGET_D2000
+    prompt "Enable ioctrl"
+
+config ENABLE_IOPAD
+    bool
+    default y if TARGET_E2000Q || TARGET_E2000D || TARGET_E2000S || TARGET_PHYTIUMPI
+    prompt "Enable iopad"

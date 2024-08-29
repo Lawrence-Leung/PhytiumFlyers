@@ -1,0 +1,3 @@
+/home/lawrence/projects/Phytium2024-Local/phytium-free-rtos-sdk/example/system/amp/openamp/core0/build/armv8/gcc/fcrt0.o: \
+ /home/lawrence/projects/Phytium2024-Local/phytium-free-rtos-sdk/standalone/arch/armv8/aarch32/gcc/fcrt0.S \
+ /home/lawrence/projects/Phytium2024-Local/phytium-free-rtos-sdk/example/system/amp/openamp/core0/sdkconfig.h

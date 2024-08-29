@@ -1,0 +1,3 @@
+ifdef CONFIG_USE_YMODEM
+	CSRCS_RELATIVE_FILES += $(wildcard /*.c)
+endif #CONFIG_USE_YMODEM

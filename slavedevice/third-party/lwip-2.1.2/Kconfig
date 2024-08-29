@@ -1,0 +1,78 @@
+menu "LWIP Freertos Port Configuration"
+
+    source "$(STANDALONE_DIR)/third-party/lwip-2.1.2/Kconfig"
+    
+    menu "Tcp/ip task resource configuration"
+        config LWIP_TCPIP_TASK_STACK_SIZE
+            int "TCP/IP Task Stack Size"
+            default 3072
+            # for high log levels, tcpip_adapter API calls can end up
+            # a few calls deep and logging there can trigger a stack overflow
+            range 2048 65536
+            help
+                Configure TCP/IP task stack size, used by LWIP to process multi-threaded TCP/IP operations.
+                Setting this stack too small will result in stack overflow crashes.
+        
+        config LWIP_TCPIP_TASK_PRIO
+            int "TCP/IP Task priority"
+            default 6
+            help
+                Configure TCP/IP task priority, used by LWIP to process multi-threaded TCP/IP operations.
+
+        config LWIP_TCPIP_RECVMBOX_SIZE
+            int "TCPIP task receive mail box size"
+            default 32
+            range 6 64 if !LWIP_WND_SCALE
+            range 6 1024 if LWIP_WND_SCALE
+            help
+                Set TCPIP task receive mail box size. Generally bigger value means higher throughput
+                but more memory. The value should be bigger than UDP/TCP mail box size.
+    endmenu
+
+        
+    menu "lwip port thread Configuration"
+        config LWIP_PORT_USE_RECEIVE_THREAD
+            bool "Use Rx Thread"
+            default y
+
+        if LWIP_PORT_USE_RECEIVE_THREAD
+            config LWIP_PORT_RECEIVE_THREAD_STACKSIZE
+                int "the stack size of the receive thread"
+                default 2048 if TARGET_ARMV8_AARCH64
+                default 1024
+            config LWIP_PORT_RECEIVE_THREAD_PRIORITY
+                int "the priority of the receive thread"
+                default 5
+        endif 
+
+        config LWIP_PORT_USE_LINK_DETECT_THREAD
+            bool "Use Link detect Thread"
+            default y
+
+        if LWIP_PORT_USE_LINK_DETECT_THREAD
+            config LWIP_PORT_LINK_DETECT_STACKSIZE
+                int "the stack size of the mac link detect thread"
+                default 2048 if TARGET_ARMV8_AARCH64
+                default 1024
+            config LWIP_PORT_LINK_DETECT_PRIORITY
+                int "the priority of the mac link detect thread"
+                default 5
+        endif
+
+        config LWIP_PORT_DHCP_THREAD
+            bool "Use dhcp thread"
+            default y
+
+        if LWIP_PORT_DHCP_THREAD
+            config LWIP_PORT_DHCP_STACKSIZE
+                int "the stack size of the dhcp thread"
+                default 4096 if TARGET_ARMV8_AARCH64
+                default 2048
+            config LWIP_PORT_DHCP_PRIORITY
+                int "the priority of the dhcp thread"
+                default 5
+        endif
+        
+    endmenu
+
+endmenu

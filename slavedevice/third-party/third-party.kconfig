@@ -1,0 +1,163 @@
+
+menu "Third-party configuration"
+config USE_LWIP
+    bool
+    prompt "Use lwip"
+    default n
+    help
+        Include LWIP for Network Protocol
+
+    if USE_LWIP
+        source "$(FREERTOS_SDK_DIR)/third-party/lwip-2.1.2/lwip.kconfig"
+    endif
+
+config USE_LETTER_SHELL
+    bool
+    prompt "Use letter shell"
+    default n
+    help
+        Include Litter Shell for User Interactive
+
+    if USE_LETTER_SHELL
+        source "$(FREERTOS_SDK_DIR)/third-party/letter-shell-3.1/Kconfig"
+    endif
+
+config USE_AMP
+    bool
+    prompt "Use asymmetric multi-processing"
+    default n
+    help
+        Include OpenAMP framework
+
+    if USE_AMP
+        config USE_LIBMETAL
+            bool
+            prompt "Use libmetal"
+            help
+                Include Libmetal
+
+        source "$SDK_DIR/third-party/openamp/ports/Kconfig"
+
+    endif
+
+
+config USE_SDMMC_CMD
+    bool
+    prompt "Use sd/mmc/sdio/emmc cmd"
+    default n
+    help
+        Include Sd/MMC/SDIO/eMMc Command framework
+
+    if USE_SDMMC_CMD
+        source "$SDK_DIR/third-party/sdmmc/Kconfig"
+    endif
+
+config USE_YMODEM
+    bool
+    prompt "Use ymodem"
+    default n
+    help
+        Include Ymodem
+
+
+config USE_SFUD
+    bool
+    prompt "Use sfud(spi flash library)"
+    default n
+    help
+        Include JEDEC SFDP standard serial (SPI) flash universal driver library
+
+    if USE_SFUD
+        source "$(FREERTOS_SDK_DIR)/third-party/sfud-1.1.0/sfud.kconfig"
+    endif
+
+config USE_BACKTRACE
+    bool
+    prompt "Display a backtrace."
+    default y
+    
+
+config USE_FATFS_0_1_4
+    bool
+    prompt "Use fatfs(0.1.4)"
+    default n
+    help
+        Include FATFS
+
+    if USE_FATFS_0_1_4
+        source "$(FREERTOS_SDK_DIR)/third-party/fatfs-0.1.4/fatfs.kconfig"
+    endif
+
+
+config USE_TLSF
+    bool
+    default y
+    prompt "Use tlsf"
+    help
+        Include TLSF for memory pool
+
+config USE_SPIFFS
+    bool
+    default n
+    prompt "Use spiffs"
+    help
+        Include Spiffs as SPI Flash File System
+
+    if USE_SPIFFS
+        source "$(FREERTOS_SDK_DIR)/third-party/spiffs-0.3.7/spiffs.kconfig"
+    endif
+
+config USE_LITTLE_FS
+    bool
+    default n
+    prompt "Use littlefs"
+    help
+        Include Littlefs as SPI Flash File System
+
+    if USE_LITTLE_FS
+        source "$SDK_DIR/third-party/littlefs-2.4.2/Kconfig"
+    endif
+
+    
+config USE_LVGL
+    bool
+    default n
+    prompt "Use lvgl"
+    help
+        Include USE_LVGL
+    
+    if USE_LVGL
+        source "$SDK_DIR/third-party/lvgl-8.3/Kconfig"
+    endif
+
+config USE_FREEMODBUS
+    bool
+    default n
+    prompt "Use freemodbus"
+    help
+        Include FreeMODBUS as MODBUS Protocol
+
+    if USE_FREEMODBUS
+        source "$SDK_DIR/third-party/freemodbus-v1.6/freemodbus.kconfig"
+    endif
+
+config USE_CHERRY_USB
+    bool
+    default n
+    prompt "Use CherryUSB(0.8.0)"
+    help
+        Include CherryUSB for XHCI controller
+
+    if USE_CHERRY_USB
+        source "$(FREERTOS_SDK_DIR)/third-party/cherryusb/Kconfig"
+    endif
+
+config USE_CRYPTO_PLUS_PLUS
+    bool
+    default n
+    depends on ENABLE_CXX
+    prompt "Use Crypto++"
+    help
+        Include Crypto++ as Crypto library
+
+endmenu

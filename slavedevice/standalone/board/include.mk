@@ -1,0 +1,19 @@
+ifdef CONFIG_E2000D_DEMO_BOARD
+	BUILD_INC_PATH_DIR += $(SDK_DIR)/board/e2000d_demo
+endif
+
+ifdef CONFIG_E2000Q_DEMO_BOARD
+	BUILD_INC_PATH_DIR += $(SDK_DIR)/board/e2000q_demo
+endif
+
+ifdef CONFIG_FIREFLY_DEMO_BOARD
+	BUILD_INC_PATH_DIR += $(SDK_DIR)/board/firefly
+endif
+
+ifdef CONFIG_D2000_TEST_BOARD
+	BUILD_INC_PATH_DIR += $(SDK_DIR)/board/d2000_test
+endif
+
+ifdef CONFIG_FT2004_DSK_BOARD
+	BUILD_INC_PATH_DIR += $(SDK_DIR)/board/ft2004_dsk
+endif

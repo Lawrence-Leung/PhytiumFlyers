@@ -1,0 +1,121 @@
+
+config USE_LWIP
+    bool
+    prompt "Use LWIP"
+    help
+        Include LWIP for Network Protocol
+
+    if USE_LWIP
+        source "$(FREERTOS_SDK_ROOT)/third-party/lwip-2.1.2/Kconfig"
+    endif
+
+
+config USE_BACKTRACE
+    bool
+    prompt "Display a backtrace."
+    default y
+
+config USE_FATFS_0_1_4
+    bool
+    prompt "Use FATFS(0.1.4)"
+    default n
+    help
+        Include FATFS
+
+    if USE_FATFS_0_1_4
+        source "$(FREERTOS_SDK_ROOT)/third-party/fatfs-0.1.4/Kconfig"
+    endif
+
+config USE_SFUD
+    bool
+    prompt "Use SFUD(Spi Flash Library)"
+    default n
+    help
+        Include JEDEC SFDP standard serial (SPI) flash universal driver library
+
+    if USE_SFUD
+        source "$(FREERTOS_SDK_ROOT)/third-party/sfud-1.1.0/Kconfig"
+    endif
+
+config USE_SPIFFS
+    bool
+    default n
+    prompt "Use Spiffs"
+    help
+        Include Spiffs as SPI Flash File System
+
+    if USE_SPIFFS
+        source "$(FREERTOS_SDK_ROOT)/third-party/spiffs-0.3.7/Kconfig"
+    endif
+
+
+config USE_AMP
+    bool
+    prompt "Use Asymmetric Multi-processing"
+    default n
+    help
+        Include OpenAMP framework
+
+    if USE_AMP
+        config USE_LIBMETAL
+            bool
+            prompt "Use Libmetal"
+            help
+                Include Libmetal
+
+        source "$(FREERTOS_SDK_ROOT)/third-party/openamp/ports/Kconfig"
+
+    endif
+
+
+config USE_LETTER_SHELL
+    bool
+    prompt "Use Letter Shell"
+    default n
+    help
+        Include Litter Shell for User Interactive
+
+    if USE_LETTER_SHELL
+        source "$(FREERTOS_SDK_ROOT)/third-party/letter-shell-3.1/Kconfig"
+    endif
+
+config USE_TLSF
+    bool
+    prompt "Use TLSF"
+    default n
+    help
+        Include TLSF for memory pool
+
+config USE_SDMMC_CMD
+    bool
+    prompt "Use Sd/MMC/SDIO/eMMc Cmd"
+    default n
+    help
+        Include Sd/MMC/SDIO/eMMc Command framework
+
+    if USE_SDMMC_CMD
+        source "$(FREERTOS_SDK_ROOT)/third-party/sdmmc-1.0/Kconfig"
+    endif
+
+config USE_CHERRY_USB
+    bool
+    default n
+    prompt "Use CherryUSB(0.8.0)"
+    help
+        Include CherryUSB for XHCI controller
+
+    if USE_CHERRY_USB
+        source "$(FREERTOS_SDK_ROOT)/third-party/cherryusb/Kconfig"
+    endif
+
+config USE_LVGL
+    bool
+    default n
+    prompt "Use LVGL"
+    help
+        Include LVGL
+
+    if USE_LVGL
+        source "$(FREERTOS_SDK_ROOT)/third-party/lvgl-8.3/Kconfig"
+    endif
+

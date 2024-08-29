@@ -1,0 +1,102 @@
+# entry of menuconfig
+
+menu "Linker Options"
+
+    choice 
+        prompt "Select Linker Script Template"
+        optional
+        default DEFAULT_LINKER_SCRIPT
+
+        config DEFAULT_LINKER_SCRIPT
+            bool "Use sdk default linker script"
+            help
+                Use linkscript for booting AARCH32 Baremetal Image from DDR
+
+        config USER_DEFINED_LD
+            bool "User defined link script"
+            help
+                Use other link script provided by User
+    endchoice
+
+if DEFAULT_LINKER_SCRIPT
+    config IMAGE_LOAD_ADDRESS
+        hex "Image load address"
+        default "0x80100000"
+        range 0x80100000 0xFFFFFFFFFFF if ARCH_ARMV8_AARCH64
+        range 0x80100000 0xFFFFFFFF if ARCH_ARMV8_AARCH32
+        depends on DEFAULT_LINKER_SCRIPT
+        help
+        This option specifies the load address of the image.
+        The address should be a 64-bit hexadecimal value.
+
+    config IMAGE_MAX_LENGTH
+        hex "Maximum image length (in bytes)"
+        default 0x1000000
+        depends on DEFAULT_LINKER_SCRIPT
+        help
+        This option specifies the maximum length of the image, in bytes.
+        The length should be a 32-bit integer value.
+
+    config HEAP_SIZE
+        int "Heap Size (MB)"
+        default "1"
+        help
+            Assign Heap size in Linkscript
+
+    config STACK_SIZE
+        hex "Stack Size (Byte)"
+        default "0x400"
+        depends on ARCH_ARMV8_AARCH64
+        help
+            Assign Stack size in Linkscript  
+
+    config FPU_STACK_SIZE
+        hex "Fpu stack Size (Byte)"
+        default "0x1000"
+        depends on ARCH_ARMV8_AARCH64
+        help
+            Assign Fpu stack size in Linkscript
+
+    config SVC_STACK_SIZE
+        hex "Aarch32 supervisor stack size (Byte)"
+        default "0x1000"
+        depends on ARCH_ARMV8_AARCH32
+        help
+            Assign Stack size in Linkscript  
+
+    config SYS_STACK_SIZE
+        hex "Aarch32 system stack size (Byte)"
+        default "0x1000"
+        depends on ARCH_ARMV8_AARCH32
+        help
+            Assign system stack size in Linkscript  
+    
+    config IRQ_STACK_SIZE
+        hex "Aarch32 Irq stack size (Byte)"
+        default "0x1000"
+        depends on ARCH_ARMV8_AARCH32
+        help
+            Assign Irq stack size in Linkscript  
+    
+    config ABORT_STACK_SIZE
+        hex "Aarch32 abort stack size (Byte)"
+        default "0x1000"
+        depends on ARCH_ARMV8_AARCH32
+        help
+            Assign abort stack size in Linkscript  
+
+    config FIQ_STACK_SIZE
+        hex "Aarch32 fiq stack size (Byte)"
+        default "0x1000"
+        depends on ARCH_ARMV8_AARCH32
+        help
+            Assign abort stack size in Linkscript  
+    
+    config UNDEF_STACK_SIZE
+        hex "Aarch32 undef stack size (Byte)"
+        default "0x1000"
+        depends on ARCH_ARMV8_AARCH32
+        help
+            Assign undef stack size in Linkscript 
+endif
+endmenu

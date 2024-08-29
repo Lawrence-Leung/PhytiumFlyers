@@ -1,0 +1,85 @@
+config FATFS_RAM_DISK
+    bool "RAM"
+    default y
+    help
+        Support Fatfs in RAM storage
+
+if FATFS_RAM_DISK
+    menu "RAM Disk Configuration"
+        config FATFS_RAM_DISK_BASE
+            hex "Base address/Hex"
+            default 0xa0000000
+            help
+                Setup start address of RAM Disk
+
+        config FATFS_RAM_DISK_SIZE_MB
+            int "Total size/MB"
+            default 500
+            help
+                Setup space size of RAM Disk
+
+        config FATFS_RAM_DISK_SECTOR_SIZE_BYTE
+            int "Sector size/B"
+            default 512
+            help
+                Setup sector size of RAM Disk
+
+    endmenu
+endif
+config FATFS_SDMMC
+    bool
+
+config FATFS_SDMMC_FSDIO_TF
+    bool "MicroSD(TF)(FSDIO)"
+    default n
+    select FATFS_SDMMC
+    help
+        Support Fatfs in SD storage
+
+config FATFS_SDMMC_FSDIO_EMMC
+    bool "eMMC(FSDIO)"
+    default n
+    select FATFS_SDMMC
+    help
+        Support Fatfs in eMMC storage
+
+config FATFS_SDMMC_FSDMMC_TF
+    bool "MicroSD(TF)(FSDMMC)"
+    default n
+    select FATFS_SDMMC
+    help
+        Support Fatfs in SD storage
+
+config FATFS_SATA_DISK
+    bool "SATA"
+    default n
+    help
+        Support Fatfs in SATA storage
+
+if FATFS_SATA_DISK
+    menu "SATA Disk Configuration"
+        config FATFS_FSATA
+            bool "Sata_controller"
+            default n
+            select USE_SATA
+            select ENABLE_FSATA
+            help
+            Support Fatfs in Sata_controller storage
+
+        config FATFS_FSATA_PCIE
+            bool "Sata_pcie"
+            default n
+            select USE_PCIE
+            select ENABLE_F_PCIE
+            select USE_SATA
+            select ENABLE_FSATA
+            help
+            Support Fatfs in Sata_Pcie storage
+    endmenu
+endif
+
+config FATFS_USB
+    bool "USB"
+    default n
+    help
+        Support Fatfs in USB Mass storage

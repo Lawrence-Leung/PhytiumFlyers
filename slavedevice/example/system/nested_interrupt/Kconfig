@@ -1,0 +1,13 @@
+
+mainmenu "Phytium Freertos Configuration"
+
+	menu "Freertos Configuration"
+	config TARGET_NAME
+		string "Build Target Name"
+		default "nested"
+		help
+			Build Target name for the demo
+	
+endmenu
+
+source "$(SDK_DIR)/../freertos.kconfig"

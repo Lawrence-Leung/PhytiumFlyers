@@ -1,0 +1,37 @@
+{
+    "files.associations": {
+<<<<<<< HEAD
+        "shell.h": "c",
+        "fpl011_hw.h": "c",
+        "finterrupt.h": "c",
+        "fpl011.h": "c",
+        "fpl011_os.h": "c"
+=======
+        "*.c": "c",
+        "shell.h": "c",
+        "rpmsg_service.h": "c",
+        "rsc_table.h": "c",
+        "alloc.h": "c",
+        "fgpio_os.h": "c",
+        "fgpio.h": "c",
+        "shell_port.h": "c",
+        "fsleep.h": "c",
+        "fcntl.h": "c",
+        "_default_fcntl.h": "c",
+        "rpmsg_retarget.h": "c",
+        "rpmsg_internal.h": "c",
+        "fcache.h": "c",
+        "unistd.h": "c",
+        "open_amp.h": "c",
+        "rpmsg_rpc_client_server.h": "c",
+        "rpmsg.h": "c",
+        "dht11.h": "c",
+        "rpmsg-echo.h": "c",
+        "stdio.h": "c",
+        "fgeneric_timer.h": "c"
+>>>>>>> dc5646149216933681afd12240c7050f50f9f00f
+    },
+    "C_Cpp.errorSquiggles": "enabled",
+    "C_Cpp.intelliSenseEngineFallback": "disabled",
+    "C_Cpp.default.intelliSenseMode": "gcc-arm64"
+}

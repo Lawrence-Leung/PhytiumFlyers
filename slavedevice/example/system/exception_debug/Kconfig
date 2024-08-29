@@ -1,0 +1,30 @@
+mainmenu "Phytium Baremetal Configuration"
+
+menu "Project Configuration"
+	
+	config TARGET_NAME
+		string "Build Target Name"
+		default "exception"
+		help
+			Build Target name for the demo
+
+	choice EXCEPTION_TEST_TYPE
+        prompt "exception type"
+        default EXCEPTION_INVALID_INSTRUCTION
+        help
+            Select Transfer Mode as Poll or Intrrupt
+
+        config EXCEPTION_INVALID_INSTRUCTION
+            bool "Invalid instruction"
+
+		config EXCEPTION_ACCESS_PERMISSION_ERROR
+            bool "Memory access permission error"
+
+        config EXCEPTION_ACCESS_VIOLATION
+            bool "Memory access violation"
+
+    endchoice #EXCEPTION_TEST_TYPE
+
+endmenu
+
+source "$(SDK_DIR)/../freertos.kconfig"

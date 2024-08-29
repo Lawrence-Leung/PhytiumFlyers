@@ -1,0 +1,23 @@
+menu "Media Configuration"
+    choice
+        prompt "choice fmedia driver"
+        config ENABLE_FMEDIA
+            bool
+            prompt "Use FMEDIA" 
+
+	if ENABLE_FMEDIA
+    config ENABLE_FDC_DP
+         bool
+         prompt "USE FMEDIA" 
+
+    config ENABLE_FDC_DP_USE_LIB
+         bool
+         prompt "USE FMEDIA LIB TO LINK"
+
+	endif
+
+endchoice
+
+endmenu
+
+

@@ -1,0 +1,97 @@
+menu "CherryUSB Configuration"
+    choice CHERRY_USB_PORT_TYPE
+        prompt "Select Cherry USB Port Type"
+        default CHERRY_USB_PORT_XHCI
+        help
+            Select Port Type for CherryUSB
+
+        config CHERRY_USB_PORT_XHCI
+            bool "XHCI"
+
+        config CHERRY_USB_PORT_PHYTIUM_OTG
+            bool "OTG(Phytium)"
+
+    endchoice # CHERRY_USB_PORT_TYPE
+
+    choice CHERRY_USB_WORK_MODE
+        prompt "Select Cherry USB Work Mode"
+        help
+            Select Work Mode for CherryUSB
+
+        config CHERRYUSB_HOST
+            bool "Host(Hc)"
+
+        config CHERRYUSB_DEVICE
+            bool "Device(Dc)"
+
+    endchoice #CHERRY_USB_WORK_MODE
+
+if CHERRYUSB_HOST
+    config CHERRY_USB_HOST_HUB
+        bool "HUB(Hc)"
+        default y  
+
+    config CHERRY_USB_HOST_MSC
+        bool "MSC(Hc)"
+        default n
+
+    config CHERRY_USB_HOST_HID
+        bool "HID(Hc)"
+        default n 
+
+    config CHERRY_USB_HOST_VEDIO
+        bool "VEDIO(Hc)"
+        default n
+
+    config CHERRY_USB_HOST_CDC
+        bool "CDC(Hc)"
+        default n
+
+    config CHERRY_USB_HOST_RNDIS_WIRELESS
+        bool "RndisWireless(Hc)"
+        default n
+
+endif #CHERRYUSB_HOST
+
+if CHERRYUSB_DEVICE
+
+    choice CHERRY_USB_DEVICE_TYPE
+        prompt "Select Cherry USB Device Type"
+        help
+            Select Device Type that Cherry USB Work as
+
+        config CHERRY_USB_DEVICE_HUB
+            bool "HUB(Dc)"
+
+        config CHERRY_USB_DEVICE_MSC
+            bool "MSC(Dc)"
+
+        config CHERRY_USB_DEVICE_HID
+            bool "HID(Dc)"
+
+        config CHERRY_USB_DEVICE_AUDIO
+            bool "Audio(Dc)"
+
+        config CHERRY_USB_DEVICE_CDC
+            bool "Cdc(Dc)"
+
+        config CHERRY_USB_DEVICE_DFU
+            bool "DFU(Dc)"
+
+        config CHERRY_USB_DEVICE_MTP
+            bool "MTP(Dc)"
+
+        config CHERRY_USB_DEVICE_PRINTER
+            bool "Printer(Dc)"
+
+        config CHERRY_USB_DEVICE_VEDIO
+            bool "Vedio(Dc)"
+
+        config CHERRY_USB_DEVICE_RNDIS_WIRELESS
+            bool "RndisWireless(Dc)"
+
+    endchoice #CHERRY_USB_DEVICE_TYPE
+
+endif #CHERRYUSB_DEVICE
+
+endmenu

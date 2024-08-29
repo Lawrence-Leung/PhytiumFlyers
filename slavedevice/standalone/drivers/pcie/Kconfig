@@ -1,0 +1,15 @@
+
+menu "Pcie Configuration"
+
+    config ENABLE_FPCIE_ECAM
+        bool
+        prompt "Use fpcie ecam"
+        default n
+
+    
+    config ENABLE_FPCIEC
+        bool
+        prompt "Use fpciec"
+        default n
+endmenu
+

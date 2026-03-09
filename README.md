@@ -7,6 +7,7 @@
 **Competition**: The 8th National College Students Integrated Circuit Innovation and Entrepreneurship Competition - Phytium Cup  
 **Award**: National Finals First Prize  
 **Team Motto**: "Together, We Soar Beyond Limits"  
+**Explanation video link (Bilibili, Phytium Information's official corporate account)**: https://www.bilibili.com/video/BV1xpcdebErf/?share_source=copy_web&vd_source=e2b20762edfeeb6c05fbe02b91ac5009
 
 ## Introduction
 
